@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="15dp"
+	android:paddingRight="15dp"
+	android:descendantFocusability="beforeDescendants">
+
+	<RelativeLayout
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="15dp"
+		android:paddingTop="15dp"
+		android:paddingBottom="15dp"
+		android:paddingRight="15dp"
+		android:background="@drawable/selector"
+		android:descendantFocusability="afterDescendants">
+
+		<ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/outletname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/logo"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/outlet_name"
+        android:textSize="16sp" 
+        android:textColor="#585858"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/outletlocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/logo"
+        android:layout_below="@+id/outletcategory"
+        android:layout_marginTop="7dp"
+        android:ellipsize="marquee"
+        android:text="@string/outlet_location"
+        android:textSize="12sp" 
+        android:textColor="#787878"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/outletcategory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:text="@string/outlet_category"
+        android:layout_marginTop="7dp"
+        android:textSize="12sp" 
+        android:textColor="#787878"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/outletcoupons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/outletname"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/outlet_offers"
+        android:textSize="11sp"
+        android:textColor="#787878"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/outletcoupons"
+        android:layout_alignRight="@+id/outletname"
+        android:layout_alignTop="@+id/outletname"
+        android:src="@drawable/favourite" />
+
+	</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Restro</string>
+    <string name="outlet_name">Outlet Name</string>
+    <string name="outlet_offers">Offers</string>
+    <string name="outlet_category">Category</string>
+    <string name="outlet_location">Location</string>
+    <string name="restaurant">Restaurant Offers</string>
+
+</resources>
