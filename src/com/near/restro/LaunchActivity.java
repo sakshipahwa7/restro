@@ -38,6 +38,8 @@ public class LaunchActivity extends Activity{
 		
 		setContentView(R.layout.activity);
 		con = getApplicationContext();
+		MyLocation ml = new MyLocation();
+		ml.onCreate(con);
 		lv_nearest_restro_list = (ListView) findViewById(R.id.nearest_restro_list);
 		lv_nearest_restro_list.setOnItemClickListener(new OnItemClickListener() {
 			  @Override
